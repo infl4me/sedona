@@ -1,0 +1,26 @@
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-only: 767px;
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+$lightblue: #81b3d1;
+$darkblue: #669dc0;
+$darkerblue: #5495bd;
+$theme-color: $lightblue;
+$theme-color-hover: $darkblue;
+$theme-color-active: $darkerblue;
+
+$darkest-gray: #333333;
+$gray: #d5d5d5;
+$light-gray: #e5e5e5;
+$lighter-gray: #eeeeee;
+$lightest-gray: #f2f2f2;
+
+$input-default: $lightest-gray;
+$input-hover: $light-gray;
+$input-focus: $light-gray;
+$input-down: $gray;
+$input-indicator: $darkest-gray;

@@ -1,0 +1,43 @@
+.social-list {
+  display: flex;
+  justify-content: center;
+  /*width: 152px;*/
+}
+
+.social-list__item {
+  margin-right: 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social-list__link {
+  display: block;
+  width: 46px;
+  height: 48px;
+  background: $theme-color no-repeat center;
+
+  &:hover {
+    background-color: $theme-color-hover;
+  }
+
+  &:active {
+    background-color: $theme-color-active;
+  }
+
+  &--twitter {
+    background-image: url(../img/icon-twitter.svg);
+    background-size: 18px 14px;
+  }
+
+  &--facebook {
+    background-image: url(../img/icon-facebook.svg);
+    background-size: 9px 18px;
+  }
+
+  &--youtube {
+    background-image: url(../img/icon-youtube.svg);
+    background-size: 20px 14px;
+  }
+}

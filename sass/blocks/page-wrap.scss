@@ -1,0 +1,18 @@
+@media (min-width: $tablet-width) {
+  .inner-page .page-wrap {
+    width: $tablet-width;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-wrap,
+  .inner-page .page-wrap {
+    width: $desktop-width;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+  }
+}

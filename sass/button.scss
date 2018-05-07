@@ -1,0 +1,25 @@
+.button {
+  padding: 0;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $theme-color;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $theme-color-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $theme-color-active;
+  }
+
+  &--disabled {
+    background-color: #e5e5e5;
+  }
+}

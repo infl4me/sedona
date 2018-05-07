@@ -1,0 +1,122 @@
+.review-contacts .review__title {
+  margin-bottom: 20px;
+}
+
+.review-contacts__wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 58px;
+    height: 58px;
+    background: #e6e6e6 no-repeat center;
+  }
+
+  &--phone::after {
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  &--email::after {
+    background-image: url("../img/icon-mail.svg");
+  }
+}
+
+.review-contacts__label {
+  margin-bottom: 7px;
+  padding-left: 22px;
+  font-size: 14px;
+  line-height: 26px;
+  color: $darkest-gray;
+}
+
+.review-contacts__input {
+  height: 58px; /*for ie*/
+  padding: 16px 58px 16px 22px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  background-color: $input-default;
+  border: none;
+
+  &:hover {
+    background-color: $input-hover;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    outline: 4px solid $input-focus;
+  }
+}
+
+.review-contacts__input::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .review-contacts {
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .review-contacts .review__title {
+    margin: 0 auto;/*for border ie*/
+    margin-bottom: 25px;
+    padding: 0 59px;
+  }
+
+  .review-contacts__wrap {
+    margin-bottom: 25px;
+  }
+
+  .review-contacts__label {
+    margin-bottom: 6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review-contacts .review__title {
+    margin-bottom: 76px;
+  }
+
+  .review-contacts__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .review-contacts__wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 400px;
+    margin-bottom: 0;
+
+    &--email {
+      width: 480px;
+    }
+  }
+
+  .review-contacts__label {
+    padding-left: 0;
+  }
+
+  .review-contacts__hidden-text {
+    display: none;
+  }
+
+  .review-contacts__input {
+    width: 315px;
+  }
+}

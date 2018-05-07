@@ -1,0 +1,49 @@
+.review-free .review__title {
+  margin-bottom: 17px;
+}
+
+.review-free__area {
+  display: block;
+  width: 100%;
+  height: 160px;
+  margin-bottom: 50px;
+  padding: 16px 22px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  border: none;
+  background-color: $input-default;
+  resize: none;
+
+  &:hover {
+    background-color: $input-hover;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    outline: 4px solid $input-focus;
+  }
+}
+
+.review-free__area::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .review-free {
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .review-free .review__title {
+    margin: 0 auto;/*for border ie*/
+    margin-bottom: 57px;
+    padding: 0 72.5px;
+  }
+
+  .review-free__area {
+    margin-bottom: 58px;
+  }
+}

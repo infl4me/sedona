@@ -1,0 +1,164 @@
+.photo {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+.photo__item {
+  padding: 22px 20px 17px 20px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.photo__img-block {
+  width: 280px;
+  height: 280px;
+}
+
+.photo__description {
+  padding-top: 15px;
+}
+
+.photo__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photo__author {
+  margin: 0;
+  margin-bottom: 8px;
+  color: $darkest-gray;
+  text-transform: none;
+}
+
+.photo__like {
+  position: relative;
+  padding-left: 38px;
+  font-weight: 700;
+}
+
+.photo__like-btn {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 24px;
+  height: 22px;
+  padding: 0;
+  background-color: transparent;
+  fill: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    fill: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    fill: rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photo {
+    width: 648px;
+  }
+
+  .photo__item {
+    padding: 0;
+    border: none;
+  }
+
+  .photo__img-block {
+    width: 324px;
+    height: 267px;
+
+    &--popular {
+      width: 648px;
+      height: 400px;
+    }
+  }
+
+  .photo__description {
+    position: relative;
+    padding: 16px 20px;
+    background-color: #f2f2f2;
+  }
+
+  .photo-list .photo__item:nth-child(even) .photo__description {
+    background-color: #e9e9e9;
+  }
+
+  .photo__author {
+    margin-bottom: 0;
+  }
+
+  .photo__like {
+    position: absolute;
+    top: 30px;
+    left: 239px;
+    padding-left: 32px;
+
+    &--popular {
+      left: 564px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo {
+    width: auto;
+    margin: 0;
+  }
+
+  .photo__item {
+    position: relative;
+  }
+
+  .photo__img-block {
+    width: 400px;
+    height: 267px;
+
+    &--popular {
+      width: 1200px;
+      height: 400px;
+    }
+  }
+
+  .photo__description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .photo-list .photo__item:nth-child(even) .photo__description {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .photo__author {
+    color: #ffffff;
+  }
+
+  .photo__like {
+    top: 30px;
+    left: 314px;
+
+    &--popular {
+      left: 1114px;
+    }
+  }
+
+  .photo__like-btn {
+    fill: #ffffff;
+
+    &:hover {
+      fill: #c7c7c7;
+    }
+
+    &:active {
+      fill: #979797;
+    }
+  }
+}

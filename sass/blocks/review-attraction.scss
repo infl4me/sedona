@@ -1,0 +1,119 @@
+.review-attraction .review__title {
+  margin-bottom: 16px;
+}
+
+.review-attraction__wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.review-attraction__checkbox {
+  display: block; /*ie 10*/
+  position: relative;
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  margin-right: 24px;
+  background-color: $input-default;
+  border-radius: 5px;
+}
+
+.review-attraction__input[type="checkbox"]:checked + .review-attraction__checkbox::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 16px;
+  background: url("../img/icon-tick.svg") no-repeat;
+  transform: translate(-50%, -50%);
+}
+
+.review-attraction__input[type="checkbox"]:active:checked + .review-attraction__checkbox::before {
+  opacity: 0.3;
+}
+
+.review-attraction__wrap {
+  &:hover .review-attraction__checkbox {
+    background-color: $input-hover;
+  }
+
+  &:active .review-attraction__checkbox {
+    background-color: $input-down;
+  }
+}
+
+.review-attraction__wrap:active ~ .review-attraction__checkbox {
+  background-color: $input-down;
+}
+
+.review-attraction__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: none;
+}
+
+.review-attraction__input:focus ~ .review-attraction__checkbox {
+  background-color: $input-hover;
+}
+
+@media (min-width: $tablet-width) {
+  .review-attraction {
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .review-attraction .review__title {
+    margin: 0 auto;/*for border ie*/
+    margin-bottom: 42px;
+    padding: 0 60.2px;
+  }
+
+  .review-attraction__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding-left: 95px;
+  }
+
+  .review-attraction__wrap {
+    width: 229px;
+    margin-bottom: 32px;
+
+    &--item-1 {
+      order: -3;
+      margin-right: 30px;
+    }
+
+    &--item-2 {
+      order: -1;
+      margin-right: 30px;
+      margin-bottom: 68px;
+    }
+
+    &--item-3 {
+      order: -2;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review-attraction__container {
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  .review-attraction__wrap {
+    width: auto;
+    max-width: 25%;
+    margin: 0;
+    margin-bottom: 29px;
+  }
+}

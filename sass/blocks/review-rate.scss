@@ -1,0 +1,85 @@
+.review-rate .review__title {
+  margin-bottom: 23px;
+}
+
+.review-rate__wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover .review-rate__radio {
+    background-color: $input-hover;
+  }
+
+  &:active .review-rate__radio {
+    background-color: $input-down;
+  }
+
+  &:active .review-rate__input[type="radio"]:checked + .review-rate__radio::before {
+    background-color: rgba(51, 51, 51, 0.3);
+  }
+}
+
+.review-rate__radio {
+  display: block; /*ie10*/
+  position: relative;
+  width: 53px;
+  height: 53px;
+  margin-right: 25px;
+  background-color: $input-default;
+  border-radius: 50%;
+}
+
+.review-rate__input[type="radio"]:checked + .review-rate__radio::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 21px;
+  height: 21px;
+  background-color: $input-indicator;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.review-rate__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: none;
+}
+
+.review-rate__input:focus ~ .review-rate__radio {
+  background-color: $input-hover;
+}
+
+@media (min-width: $tablet-width) {
+  .review-rate__wrap {
+    margin-bottom: 24px;
+  }
+
+  .review-rate .review__title {
+    margin-bottom: 59px;
+    text-align: left;
+  }
+
+  .review-rate__radio {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review-rate .review__title {
+    padding-left: 80px;
+  }
+
+  .review-rate__radio {
+    margin-right: 27px;
+  }
+}

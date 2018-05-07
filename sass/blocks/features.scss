@@ -1,0 +1,33 @@
+.features {
+  margin-bottom: 30px;
+}
+
+.features__title {
+  margin: 0;
+  padding: 0 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: $darkest-gray;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    margin-bottom: 54px;
+  }
+
+  .features__title {
+    margin-bottom: 47px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    margin-bottom: 54px;
+  }
+
+  .features__title {
+    margin-bottom: 51px;
+  }
+}
