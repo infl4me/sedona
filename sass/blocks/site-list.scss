@@ -94,15 +94,5 @@
         color: rgba(118, 99, 87, 0.3);
       }
     }
-
-    &--logo[href]:hover img {
-      opacity: 0.9;
-      cursor: pointer;
-    }
-
-    &--logo[href]:active img {
-      opacity: 0.6;
-      cursor: pointer;
-    }
   }
 }
