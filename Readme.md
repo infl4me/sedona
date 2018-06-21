@@ -1,1 +1,1 @@
-https://infl4me.github.io/sedona-test/build/index.html
+https://infl4me.github.io/sedona/build/index.html
